@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pencarian Penduduk</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="form-card">
+        <h1>Pencarian Data Penduduk</h1>
+
+        <p class="description">
+          Gunakan form berikut untuk mencari data penduduk berdasarkan nama,
+          NIK, kode pos, atau tanggal lahir.
+        </p>
+
+        <!-- Method GET digunakan karena form ini digunakan untuk pencarian data. -->
+        <form action="hasil-pencarian.html" method="get">
+          <!-- Input Nama -->
+          <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input
+              type="text"
+              id="nama"
+              name="nama"
+              placeholder="Masukkan nama lengkap"
+            />
+          </div>
+
+          <!-- Input NIK -->
+          <div class="form-group">
+            <label for="nim">NIK</label>
+            <input
+              type="text"
+              id="nik"
+              name="nik"
+              placeholder="Contoh: 31700000"
+            />
+          </div>
+
+          <!-- Input Kode Pos -->
+          <div class="form-group">
+            <label for="angkatan">Kode Pos</label>
+            <input
+              type="number"
+              id="kodepos"
+              name="kodepos"
+              min="11111"
+              max="55555"
+              placeholder="Contoh: 52362"
+            />
+          </div>
+
+          <!-- Input Tanggal Lahir -->
+          <div class="form-group">
+            <label for="tanggal_lahir">Tanggal Lahir</label>
+            <input type="date" id="tanggal_lahir" name="tanggal_lahir" />
+          </div>
+
+          <!-- Tombol Aksi -->
+          <div class="form-actions">
+            <button type="submit" class="btn-submit">Cari Data</button>
+            <button type="reset" class="btn-reset">Reset</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

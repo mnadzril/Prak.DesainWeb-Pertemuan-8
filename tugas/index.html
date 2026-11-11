@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Registrasi Event Tech 2026</title>
+    <!-- Menghubungkan ke file CSS yang ada di dalam folder css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Registrasi Event Tech 2026</h2>
+      <form action="#" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="nama">Nama Lengkap *</label>
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            minlength="3"
+            maxlength="50"
+            required
+            placeholder="Masukkan nama lengkap"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="nohp">Nomor WhatsApp *</label>
+          <input
+            type="text"
+            id="nohp"
+            name="nohp"
+            pattern="[0-9]{10,13}"
+            required
+            placeholder="Contoh: 081234567890 (10-13 digit)"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="profesi">Profesi / Pekerjaan *</label>
+          <select id="profesi" name="profesi" required>
+            <option value="">-- Pilih Profesi --</option>
+            <option value="mahasiswa">Mahasiswa</option>
+            <option value="developer">Developer</option>
+            <option value="desainer">UI/UX Designer</option>
+            <option value="lainnya">Lainnya</option>
+          </select>
+        </div>
+
+        <fieldset>
+          <legend>Jenis Kehadiran *</legend>
+          <input
+            type="radio"
+            id="offline"
+            name="kehadiran"
+            value="offline"
+            required
+          />
+          <label for="offline" style="display: inline; font-weight: normal"
+            >Offline (Jakarta)</label
+          ><br />
+          <input
+            type="radio"
+            id="online"
+            name="kehadiran"
+            value="online"
+            required
+          />
+          <label for="online" style="display: inline; font-weight: normal"
+            >Online (Zoom)</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <legend>Sesi Workshop yang Diikuti (Boleh lebih dari satu)</legend>
+          <input type="checkbox" id="web" name="sesi[]" value="web" />
+          <label for="web" style="display: inline; font-weight: normal"
+            >Web Development</label
+          ><br />
+          <input type="checkbox" id="ai" name="sesi[]" value="ai" />
+          <label for="ai" style="display: inline; font-weight: normal"
+            >Artificial Intelligence</label
+          ><br />
+          <input type="checkbox" id="data" name="sesi[]" value="data" />
+          <label for="data" style="display: inline; font-weight: normal"
+            >Data Science</label
+          >
+        </fieldset>
+
+        <div class="form-group">
+          <label for="alasan">Motivasi Mengikuti Event *</label>
+          <textarea
+            id="alasan"
+            name="alasan"
+            rows="4"
+            minlength="20"
+            maxlength="300"
+            required
+            placeholder="Tuliskan motivasi Anda (Minimal 20 karakter)..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="cv">Upload CV / Resume (PDF) *</label>
+          <input type="file" id="cv" name="cv" accept=".pdf" required />
+        </div>
+
+        <button type="submit" class="btn-submit">Daftar Sekarang</button>
+      </form>
+    </div>
+  </body>
+</html>
