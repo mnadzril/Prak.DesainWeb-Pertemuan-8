@@ -1,0 +1,95 @@
+/* =========================
+PENGATURAN DASAR HALAMAN
+========================= */
+BODY {
+  font-family: HELVETICA, SANS-SERIF;
+  font-size: 16px;
+  line-height: 1.7;
+  background-color: #fff;
+  color: #333333;
+  margin: 0;
+}
+/* =========================
+HEADER
+========================= */
+HEADER {
+  background: linear-gradient(#1080b8 #f4f4f4 #1080b8);
+  color: rgb(1, 60, 94);
+  text-align: center;
+  padding: 30px;
+}
+HEADER H1 {
+  color: rgb(1, 60, 94);
+  font-size: 32px;
+  font-weight: BOLD;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.PROFESI,
+.NPM,
+.ALAMAT,
+.CITA-CITA {
+  font-size: 18px;
+  font-weight: NORMAL;
+  color: rgb(1, 60, 94);
+  text-align: center;
+}
+.FOTO-PROFIL {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  border: 4px SOLID WHITE;
+  border-color: rgb(1, 60, 94);
+}
+/* =========================
+KONTEN UTAMA
+========================= */
+MAIN {
+  width: 80%;
+  margin: 30px AUTO;
+  background: linear-gradient(#1080b8 #f4f4f4 #1080b8);
+  padding: 30px;
+  border-radius: 5%;
+  border: 4px SOLID WHITE;
+  border-color: rgb(1, 60, 94);
+}
+SECTION {
+  margin-bottom: 30px;
+}
+H2 {
+  color: rgb(1, 60, 94);
+  font-size: 24px;
+  border-bottom: 2px SOLID rgb(1, 60, 94);
+  padding-bottom: 5px;
+}
+P {
+  font-size: 16px;
+  text-align: JUSTIFY;
+  color: rgb(1, 60, 94);
+}
+UL {
+  line-height: 1.8;
+}
+/* =========================
+HYPERLINK
+========================= */
+A {
+  color: #006699;
+  text-decoration: NONE;
+}
+A:hover {
+  text-decoration: UNDERLINE;
+}
+/* =========================
+FOOTER
+========================= */
+FOOTER {
+  background-color: RGB(30, 30, 30);
+  color: WHITE;
+  text-align: CENTER;
+  padding: 15px;
+}
+FOOTER P {
+  text-align: CENTER;
+  font-size: 14px;
+}
