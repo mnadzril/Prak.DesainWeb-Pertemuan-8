@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elevate Digital Agency | Muhammad Nadzril Ilham Kusuma</title>
+    <!-- Bootstrap CSS v5.3.3 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ==========================================
+        NAVBAR
+    ========================================== -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark brand-navbar sticky-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Elevate Digital</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarAgency"
+          aria-controls="navbarAgency"
+          aria-expanded="false"
+          aria-label="Buka menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarAgency">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#hero">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#layanan">Layanan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tentang">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontak">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ==========================================
+        HERO SECTION
+    ========================================== -->
+    <header id="hero" class="hero-section text-white py-5">
+      <div class="container py-md-5">
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-lg-7">
+            <span class="section-label text-warning"
+              >DIGITAL MARKETING AGENCY</span
+            >
+            <h1 class="display-4 fw-bold mb-3">
+              Tingkatkan Bisnis Anda Bersama Elevate Digital
+            </h1>
+            <p class="lead mb-4 text-light">
+              Solusi pemasaran digital terpadu untuk mempercepat pertumbuhan
+              bisnis, memperluas jangkauan pasar, dan membangun brand yang kuat
+              di era digital.
+            </p>
+            <div class="d-flex gap-3">
+              <a
+                href="#layanan"
+                class="btn btn-warning btn-lg fw-semibold text-dark"
+                >Jelajahi Layanan</a
+              >
+              <a href="#kontak" class="btn btn-outline-light btn-lg"
+                >Hubungi Kami</a
+              >
+            </div>
+          </div>
+          <div class="col-12 col-lg-5">
+            <div
+              class="card border-0 shadow-lg p-3 bg-white text-dark rounded-4"
+            >
+              <div class="card-body d-flex align-items-center gap-3">
+                <img
+                  src="images/profil.jpg"
+                  alt="Muhammad Nadzril Ilham Kusuma"
+                  class="rounded-circle"
+                  width="70"
+                  height="70"
+                  onerror="
+                    this.src = 'https://via.placeholder.com/70?text=MNIK'
+                  "
+                />
+                <div>
+                  <span class="text-uppercase text-muted small fw-bold"
+                    >Owner Agensi</span
+                  >
+                  <strong class="d-block h5 mb-0"
+                    >Muhammad Nadzril Ilham Kusuma</strong
+                  >
+                  <span class="text-secondary small">Digital Marketer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==========================================
+        MAIN CONTENT
+    ========================================== -->
+    <main class="container py-5">
+      <!-- Alert Komponen -->
+      <div
+        class="alert alert-warning alert-dismissible fade show shadow-sm mb-5"
+        role="alert"
+      >
+        <strong>Promo Spesial!</strong> Dapatkan audit SEO gratis untuk 5 klien
+        pertama bulan ini.
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Tutup"
+        ></button>
+      </div>
+
+      <!-- ==========================================
+            SECTION: 6 CARD LAYANAN
+        ========================================== -->
+      <section id="layanan" class="mb-5">
+        <div class="text-center mb-5">
+          <span class="section-label">LAYANAN KAMI</span>
+          <h2 class="fw-bold h2">Solusi Digital Marketing Profesional</h2>
+          <p class="text-secondary">
+            Pilih layanan terbaik untuk mendongkrak performa bisnis digital
+            Anda.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-custom h-100 shadow-sm border-0">
+              <img
+                src="images/social-media.png"
+                class="card-img-top card-img-fixed"
+                alt="Social Media Management"
+                onerror="
+                  this.src =
+                    'https://via.placeholder.com/400x250?text=Social+Media'
+                "
+              />
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-primary mb-2 align-self-start"
+                  >Social Media</span
+                >
+                <h3 class="h5 fw-bold">Social Media Management</h3>
+                <p class="text-secondary flex-grow-1">
+                  Pengelolaan media sosial secara profesional untuk meningkatkan
+                  engagement dan brand awareness.
+                </p>
+                <button
+                  class="btn btn-brand mt-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalDetail"
+                  data-title="Social Media Management"
+                  data-desc="Layanan pengelolaan konten, penjadwalan postingan, analisis metrik, dan interaksi audiens di Instagram, TikTok, serta Facebook secara konsisten dan terarah."
+                >
+                  Detail Layanan
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-custom h-100 shadow-sm border-0">
+              <img
+                src="images/seo-opt.jpg"
+                class="card-img-top card-img-fixed"
+                alt="SEO Optimization"
+                onerror="
+                  this.src =
+                    'https://via.placeholder.com/400x250?text=SEO+Optimization'
+                "
+              />
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-success mb-2 align-self-start">SEO</span>
+                <h3 class="h5 fw-bold">SEO Optimization</h3>
+                <p class="text-secondary flex-grow-1">
+                  Optimasi mesin pencari agar website bisnis Anda tampil di
+                  halaman utama Google.
+                </p>
+                <button
+                  class="btn btn-brand mt-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalDetail"
+                  data-title="SEO Optimization"
+                  data-desc="Strategi On-Page & Off-Page SEO, riset keyword mendalam, perbaikan kecepatan website, dan optimasi struktur agar organic traffic meningkat pesat."
+                >
+                  Detail Layanan
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-custom h-100 shadow-sm border-0">
+              <img
+                src="images/content.jpg"
+                class="card-img-top card-img-fixed"
+                alt="Content Creation"
+                onerror="
+                  this.src =
+                    'https://via.placeholder.com/400x250?text=Content+Creation'
+                "
+              />
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-info text-dark mb-2 align-self-start"
+                  >Content</span
+                >
+                <h3 class="h5 fw-bold">Content Creation</h3>
+                <p class="text-secondary flex-grow-1">
+                  Pembuatan konten digital yang kreatif, menarik, dan relevan
+                  dengan target audiens Anda.
+                </p>
+                <button
+                  class="btn btn-brand mt-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalDetail"
+                  data-title="Content Creation"
+                  data-desc="Produksi konten visual berkualitas tinggi berupa copywriting, desain grafis banner, video reels/TikTok, serta artikel blog yang memikat."
+                >
+                  Detail Layanan
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-custom h-100 shadow-sm border-0">
+              <img
+                src="images/advertising.jpg"
+                class="card-img-top card-img-fixed"
+                alt="Advertising"
+                onerror="
+                  this.src =
+                    'https://via.placeholder.com/400x250?text=Advertising'
+                "
+              />
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-warning text-dark mb-2 align-self-start"
+                  >Ads</span
+                >
+                <h3 class="h5 fw-bold">Advertising</h3>
+                <p class="text-secondary flex-grow-1">
+                  Layanan iklan digital berbayar (Meta Ads & Google Ads) untuk
+                  konversi penjualan maksimal.
+                </p>
+                <button
+                  class="btn btn-brand mt-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalDetail"
+                  data-title="Advertising"
+                  data-desc="Campaign planning, penentuan target audiens yang spesifik, pembuatan ad copy persuasif, dan optimasi budget iklan untuk ROI tertinggi."
+                >
+                  Detail Layanan
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-custom h-100 shadow-sm border-0">
+              <img
+                src="images/branding.jpg"
+                class="card-img-top card-img-fixed"
+                alt="Branding"
+                onerror="
+                  this.src = 'https://via.placeholder.com/400x250?text=Branding'
+                "
+              />
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-danger mb-2 align-self-start"
+                  >Branding</span
+                >
+                <h3 class="h5 fw-bold">Branding</h3>
+                <p class="text-secondary flex-grow-1">
+                  Pengembangan identitas visual dan strategi branding perusahaan
+                  yang kuat dan berkarakter.
+                </p>
+                <button
+                  class="btn btn-brand mt-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalDetail"
+                  data-title="Branding"
+                  data-desc="Pembuatan brand guidelines, perancangan logo, pemilihan warna identitas, hingga narasi brand positioning yang membedakan Anda dari kompetitor."
+                >
+                  Detail Layanan
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card card-custom h-100 shadow-sm border-0">
+              <img
+                src="images/web.jpg"
+                class="card-img-top card-img-fixed"
+                alt="Web Development"
+                onerror="
+                  this.src =
+                    'https://via.placeholder.com/400x250?text=Web+Development'
+                "
+              />
+              <div class="card-body d-flex flex-column">
+                <span class="badge bg-secondary mb-2 align-self-start"
+                  >Technology</span
+                >
+                <h3 class="h5 fw-bold">Web Development</h3>
+                <p class="text-secondary flex-grow-1">
+                  Pembuatan dan pengembangan website profesional yang responsif
+                  untuk mendukung bisnis online.
+                </p>
+                <button
+                  class="btn btn-brand mt-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalDetail"
+                  data-title="Web Development"
+                  data-desc="Pengembangan website company profile, landing page penjualan, maupun e-commerce dengan desain modern, cepat, dan ramah pengguna (mobile-friendly)."
+                >
+                  Detail Layanan
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+            SECTION: TENTANG KAMI
+        ========================================== -->
+      <section id="tentang" class="py-5 bg-white rounded-4 shadow-sm p-4 mb-5">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+            <span class="section-label">TENTANG KAMI</span>
+            <h2 class="fw-bold mb-3">Elevate Digital Agency</h2>
+            <p class="text-secondary">
+              Didirikan oleh <strong>Muhammad Nadzril Ilham Kusuma</strong>,
+              agensi kami berfokus membantu UMKM hingga korporasi besar
+              bertransformasi secara digital. Kami menggabungkan kreativitas,
+              analisis data, dan teknologi terkini untuk memberikan hasil nyata
+              bagi setiap klien.
+            </p>
+            <ul class="list-unstyled text-secondary">
+              <li class="mb-2">
+                ✅ Strategi berbasis data dan riset pasar mendalam
+              </li>
+              <li class="mb-2">
+                ✅ Tim profesional berpengalaman di bidangnya
+              </li>
+              <li class="mb-2">✅ Laporan performa berkala yang transparan</li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-6 text-center">
+            <div class="p-5 bg-light rounded-4 border">
+              <h3 class="h4 fw-bold text-primary mb-2">
+                Siap Mengembangkan Bisnis Anda?
+              </h3>
+              <p class="text-secondary mb-3">
+                Konsultasikan kebutuhan digital marketing Anda secara gratis
+                bersama tim ahli kami.
+              </p>
+              <a href="#kontak" class="btn btn-brand px-4">Mulai Konsultasi</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+            SECTION: FORM KONTAK
+        ========================================== -->
+      <section id="kontak" class="registration-section">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <div class="card border-0 shadow-lg rounded-4">
+              <div class="card-body p-4 p-md-5">
+                <span class="section-label">KONTAK KAMI</span>
+                <h2 class="h3 fw-bold mb-2">Jadwalkan Konsultasi</h2>
+                <p class="text-secondary mb-4">
+                  Lengkapi form berikut untuk memesan layanan atau konsultasi.
+                  Field bertanda * wajib diisi.
+                </p>
+
+                <form>
+                  <!-- Nama -->
+                  <div class="mb-3">
+                    <label for="nama" class="form-label fw-semibold"
+                      >Nama Lengkap *</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nama"
+                      name="nama"
+                      required
+                    />
+                  </div>
+
+                  <!-- Email -->
+                  <div class="mb-3">
+                    <label for="email" class="form-label fw-semibold"
+                      >Email *</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="nama@email.com"
+                      required
+                    />
+                  </div>
+
+                  <!-- Select -->
+                  <div class="mb-3">
+                    <label for="jenis" class="form-label fw-semibold"
+                      >Pilih Layanan *</label
+                    >
+                    <select
+                      class="form-select"
+                      id="jenis"
+                      name="jenis"
+                      required
+                    >
+                      <option value="">-- Pilih Layanan --</option>
+                      <option>Social Media Management</option>
+                      <option>SEO Optimization</option>
+                      <option>Content Creation</option>
+                      <option>Advertising</option>
+                      <option>Branding</option>
+                      <option>Web Development</option>
+                    </select>
+                  </div>
+
+                  <!-- Radio -->
+                  <fieldset class="mb-3">
+                    <legend class="form-label fs-6 fw-semibold">
+                      Metode Konsultasi *
+                    </legend>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="konsultasi"
+                        id="online"
+                        value="online"
+                        required
+                      />
+                      <label class="form-check-label" for="online"
+                        >Online Meeting (Zoom / GMeet)</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="konsultasi"
+                        id="offline"
+                        value="offline"
+                      />
+                      <label class="form-check-label" for="offline"
+                        >Meeting Langsung di Kantor</label
+                      >
+                    </div>
+                  </fieldset>
+
+                  <!-- Textarea -->
+                  <div class="mb-3">
+                    <label for="pesan" class="form-label fw-semibold"
+                      >Detail Kebutuhan / Pesan</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="pesan"
+                      name="pesan"
+                      rows="4"
+                      maxlength="300"
+                      placeholder="Ceritakan singkat tentang bisnis dan tujuan Anda..."
+                    ></textarea>
+                  </div>
+
+                  <!-- Checkbox -->
+                  <div class="form-check mb-4">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="setuju"
+                      required
+                    />
+                    <label class="form-check-label" for="setuju"
+                      >Saya menyatakan data yang diisi sudah benar.</label
+                    >
+                  </div>
+
+                  <!-- Button modal konfirmasi -->
+                  <button
+                    type="button"
+                    class="btn btn-brand w-100 py-2 fw-semibold"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalKonfirmasi"
+                  >
+                    Kirim Permintaan Konsultasi
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==========================================
+        MODAL DETAIL LAYANAN
+    ========================================== -->
+    <div class="modal fade" id="modalDetail" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5 fw-bold" id="modalDetailTitle">
+              Detail Layanan
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Tutup"
+            ></button>
+          </div>
+          <div class="modal-body" id="modalDetailBody">
+            Informasi lengkap mengenai layanan akan ditampilkan pada bagian ini.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+        MODAL KONFIRMASI PENDAFTARAN
+    ========================================== -->
+    <div
+      class="modal fade"
+      id="modalKonfirmasi"
+      tabindex="-1"
+      aria-labelledby="judulKonfirmasi"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5 fw-bold" id="judulKonfirmasi">
+              Konfirmasi Pengiriman
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Tutup"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Apakah Anda yakin data dan pilihan layanan yang dimasukkan sudah
+            benar?
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              Periksa Kembali
+            </button>
+            <button
+              type="button"
+              class="btn btn-brand"
+              data-bs-dismiss="modal"
+              onclick="alert('Pendaftaran berhasil dikirim!')"
+            >
+              Ya, Kirim
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+        FOOTER
+    ========================================== -->
+    <footer class="brand-footer text-white py-4 mt-5">
+      <div class="container text-center">
+        <p class="mb-1 fw-semibold">Elevate Digital Agency &copy; 2026</p>
+        <p class="small text-light mb-0">
+          Dibuat oleh Muhammad Nadzril Ilham Kusuma
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script untuk dinamis modal detail -->
+    <script>
+      const modalDetail = document.getElementById("modalDetail");
+      modalDetail.addEventListener("show.bs.modal", function (event) {
+        const button = event.relatedTarget;
+        const title = button.getAttribute("data-title");
+        const desc = button.getAttribute("data-desc");
+
+        modalDetail.querySelector(".modal-title").textContent = title;
+        modalDetail.querySelector(".modal-body").textContent = desc;
+      });
+    </script>
+  </body>
+</html>
